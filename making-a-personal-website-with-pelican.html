@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+
+  
+
+
+ 
+
+<meta name="author" content="Will Whitham" />
+<meta name="description" content="If you found yourself on this page you were probably here for comparative psychology, not extremely amateur website development. But! If you want a simple and free website, maybe this post will help. Pelican is a static website generator for Python. &#39;Static&#39; means roughly what it sounds like - no bells …" />
+<meta name="keywords" content="">
+
+
+  <meta property="og:site_name" content="Will Whitham"/>
+  <meta property="og:title" content="Making a personal website with Pelican"/>
+  <meta property="og:description" content="If you found yourself on this page you were probably here for comparative psychology, not extremely amateur website development. But! If you want a simple and free website, maybe this post will help. Pelican is a static website generator for Python. &#39;Static&#39; means roughly what it sounds like - no bells …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/making-a-personal-website-with-pelican.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-01-05 00:00:00-06:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/will-whitham.html">
+  <meta property="article:section" content="articles"/>
+  <meta property="og:image" content="images/profile.jpg">
+
+  <title>Will Whitham &ndash; Making a personal website with Pelican</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="/">
+        <img src="images/profile.jpg" alt="Will Whitham" title="Will Whitham">
+      </a>
+
+      <h1>
+        <a href="/">Will Whitham</a>
+      </h1>
+
+<p>Postdoctoral researcher in comparative psychology. Apes and apps.</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/research.html#research">
+                  Research
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://drive.google.com/file/d/1H0l6vhdVXWsMo4OapXgFREcSsmuActX_/view?usp=sharing" >==CV==</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-linkedin" href="www.linkedin.com/in/willwhitham000" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-google scholar" href="https://scholar.google.com/citations?user=hP_XTKMAAAAJ&hl=en" target="_blank">
+              <i class="fab fa-google scholar"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-researchgate" href="https://www.researchgate.net/profile/Will-Whitham-2" target="_blank">
+              <i class="fab fa-researchgate"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="making-a-personal-website-with-pelican">Making a personal website with Pelican</h1>
+    <p>
+      Posted on Wed 05 January 2022 in <a href="/category/articles.html">articles</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>If you found yourself on this page you were probably here for comparative psychology, not extremely amateur website development. But! If you want a simple and free website, maybe this post will help. </p>
+<p>Pelican is a static website generator for Python. 'Static' means roughly what it sounds
+like - no bells, no whistles, what you see is what you get. Since I won't have a 
+storefront or messageboard or anything that demands more complexity, generating a 
+static website means I can share what is essentially a series of .pdf pages without
+too much time or expense. I spent a few mornings on this, and hosting the site is free(!!)
+through github pages. This walkthrough is in Windows, and other platforms should be similar.</p>
+<h4>Getting started</h4>
+<p>You'll need some software and working knowledge to get started:</p>
+<ul>
+<li>Required :: git, a GitHub account, Python (with Pelican package installed), basic terminal know-how.</li>
+<li>Recommended :: Pycharm IDE (for ease of project management), GitHub Desktop (for version control and synergy with GitHub pages, which will eventually host your site)</li>
+</ul>
+<p>Next, open a terminal window wherever pelican installed and run </p>
+<div class="highlight"><pre><span></span><code>.\pelican-quickstart
+</code></pre></div>
+
+<p>to get started. The questions are a little vague, see the Pelican documentation for 
+clues. I got by with:</p>
+<div class="highlight"><pre><span></span><code><span class="o">+</span><span class="w"> </span><span class="n">Where</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">want</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">create</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">web</span><span class="w"> </span><span class="n">site</span><span class="err">?</span><span class="w"> </span><span class="p">(</span><span class="n">hit</span><span class="w"> </span><span class="n">Enter</span><span class="p">)</span><span class="w"></span>
+<span class="o">+</span><span class="w"> </span><span class="n">Do</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">want</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="n">prefix</span><span class="p">:</span><span class="w"> </span><span class="n">Yes</span><span class="w"></span>
+<span class="o">+</span><span class="w"> </span><span class="n">Article</span><span class="w"> </span><span class="n">pagination</span><span class="p">:</span><span class="w"> </span><span class="n">No</span><span class="w"></span>
+<span class="o">+</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="n">prefix</span><span class="p">:</span><span class="w"> </span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="p">{</span><span class="n">yourusername</span><span class="p">}</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="w"></span>
+<span class="o">+</span><span class="w"> </span><span class="n">Generate</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">Fabfile</span><span class="o">/</span><span class="n">Makefile</span><span class="p">:</span><span class="w"> </span><span class="n">Yes</span><span class="w"></span>
+<span class="o">+</span><span class="w"> </span><span class="n">Auto</span><span class="o">-</span><span class="n">reload</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">simpleHTTP</span><span class="w"> </span><span class="n">script</span><span class="p">:</span><span class="w"> </span><span class="n">Yes</span><span class="w"></span>
+<span class="o">+</span><span class="w"> </span><span class="n">Upload</span><span class="w"> </span><span class="n">mechanisms</span><span class="p">:</span><span class="w"> </span><span class="n">No</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">everything</span><span class="w"> </span><span class="n">except</span><span class="w"> </span><span class="n">Github</span><span class="w"> </span><span class="n">Pages</span><span class="w"></span>
+<span class="o">+</span><span class="w"> </span><span class="n">Is</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">personal</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="p">({</span><span class="n">yourusername</span><span class="p">}</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="p">)</span><span class="err">?</span><span class="w"> </span><span class="n">Yes</span><span class="w"></span>
+</code></pre></div>
+
+<h4>Adding content</h4>
+<p>The hard part is mostly done! Quickstart should have generated a content folder for 
+you - this is where you will stick all of the stuff you're hoping to share with the 
+world. By default Pelican recognizes three bins for your content: </p>
+<ol>
+<li>Articles - signed, dated, blog-post-style content like what you're currently reading.</li>
+<li>Pages - more free-standing content pages, e.g., 'about this page', 'contact me', etc.</li>
+<li>Images</li>
+</ol>
+<p>To keep things simple, create folders called articles, pages, and images in your 
+content folder. For articles and pages, Pelican likes two formats: reStructuredText 
+and MarkDown. I use MarkDown in jupyter-notebook, so I'm using it exclusively. To make 
+this post, I created a text file in the articles folder called howto.md. Each article 
+requires a title, followed by any other metadata you choose to include (see Pelican 
+documentation for all the subtitles, authorship, keywords, etc that can be included), 
+then your properly content. Pages are created in the same way, and both articles and 
+pages can be decorated with images from the images folder. </p>
+<p><img alt="" src="/images/9.jpg" width="50%"></p>
+<p><em>Hey look, an image</em></p>
+<h4>Admire your handiwork</h4>
+<p>To preview the site, return to the terminal window and run </p>
+<div class="highlight"><pre><span></span><code>pelican content
+</code></pre></div>
+
+<p>Because of the site's simplicity, this should go quickly (&lt;10 seconds), and our shiny new .html 
+pages should start showing up in an output folder adjacent to your content folder. 
+Once the site is built, run </p>
+<div class="highlight"><pre><span></span><code>pelican -rl
+</code></pre></div>
+
+<p>to get a live version of your site on your machine only. 
+Enter the localhost id in your browser to preview your page! All of your content should 
+be visible and organized according to Pelican's defaults. Close the server with ctrl+c.</p>
+<h4>Spice things up</h4>
+<p>Defaults are kind of boring! Check out new pelican-themes and their documentation 
+to spice things up (I'm using the Flex theme). To change your theme, first clone the 
+repository of the theme you like, then open a terminal window and run </p>
+<div class="highlight"><pre><span></span><code>pelican-theme --install {path to the repository you just cloned}
+</code></pre></div>
+
+<p>To see the list of themes you've installed, run </p>
+<div class="highlight"><pre><span></span><code>pelican-themes -l
+</code></pre></div>
+
+<p>To switch to a theme, run</p>
+<div class="highlight"><pre><span></span><code>pelican-themes {name of your theme}
+</code></pre></div>
+
+<p>and add the name of your theme to pelicanconf.py, e.g., </p>
+<div class="highlight"><pre><span></span><code><span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;Flex&#39;</span>
+</code></pre></div>
+
+<p>Further customization will depend on your theme, so check out its documentation. I find that there 
+are lots of cool Pelican themes, but the number of cool pelican themes that are also well documented is a lot shorter... </p>
+<p>With the Flex them, at least, nice sidebar links are incredibly easy to add. In pelicanconf.py, simply 
+specify each logo and link in a 2-item tuple:</p>
+<div class="highlight"><pre><span></span><code><span class="n">SOCIAL</span> <span class="o">=</span> <span class="p">(</span>
+      <span class="p">(</span><span class="s1">&#39;linkedin&#39;</span><span class="p">,</span> <span class="s1">&#39;www.linkedin.com/in/willwhitham000&#39;</span><span class="p">),</span>
+      <span class="p">(</span><span class="s1">&#39;google scholar&#39;</span><span class="p">,</span> <span class="s1">&#39;https://scholar.google.com/citations?user=hP_XTKMAAAAJ&amp;hl=en&#39;</span><span class="p">),</span>
+      <span class="p">(</span><span class="s1">&#39;researchgate&#39;</span><span class="p">,</span> <span class="s1">&#39;https://www.researchgate.net/profile/Will-Whitham-2&#39;</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div>
+
+<h4>Go live</h4>
+<p>When you're ready to go public with your site, you will simply </p>
+<h4>Helpful links</h4>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Will Whitham ",
+  "url" : "",
+  "image": "images/profile.jpg",
+  "description": "Site description"
+}
+</script>
+
+</body>
+</html>
